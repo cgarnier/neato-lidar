@@ -4,8 +4,11 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node test/index.js"
   },
   "author": "Clément Garnier <cle.garnier@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+  }
 }
