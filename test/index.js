@@ -1,9 +1,23 @@
 const fs = require('fs')
 const path = require('path')
+const SerialPort = require('serialPort')
 
 const LidarPacket = require('../lib/index.js').LidarPacket
 const LidarMeasure = require('../lib/index.js').LidarMeasure
 
+const serial = new SerialPort('/dev/ttyS0', {baudrate: 57600})
+
+serial.on('open', () => {
+  console.log('serial is open')
+})
+
+serial.on('data', (data) => {
+  console.log('data: ', data)
+})
+
+seral
+
+exit(0)
 let rows = fs.readFileSync(path.join(__dirname, './serial-dump.log'), {encoding: 'UTF-8'})
   .split("\n")
   .slice(500, 600)
