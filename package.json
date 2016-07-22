@@ -5,9 +5,14 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node test/index.js"
+    "start": "#forever start test/index.js",
+    "stop": "#forever stop test/index.js",
+    "build": "exit 0"
   },
   "author": "Clément Garnier <cle.garnier@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "forever": "^0.15.2",
+    "serialport": "^4.0.1"
+  }
 }
