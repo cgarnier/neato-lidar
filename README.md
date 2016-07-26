@@ -1,5 +1,7 @@
 # neato-lidar
 
+[![Build Status](https://travis-ci.org/cgarnier/neato-lidar.svg?branch=master)](https://travis-ci.org/cgarnier/neato-lidar)
+
 A lib to decode a salvaged neato lidar.
 
 
